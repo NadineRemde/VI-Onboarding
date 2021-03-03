@@ -1,0 +1,50 @@
+#mainNav, footer {
+    background-color: rgb(223, 215, 109);
+    height: 50px;
+}
+
+#infoTeaser, #stage {
+    background-color: lightgray;
+    margin: 3px;
+    margin-bottom: 15px;
+}
+
+nav, article, aside {
+    background-color: cadetblue;
+}
+
+header, footer, article, aside, nav {
+    margin: 3px;
+}
+
+#imageSection {
+    float: left;
+}
+
+@media screen and (min-width: 480px){
+}
+
+@media screen and (min-width: 600px){
+}
+
+@media screen and (min-width: 768px){
+}
+
+@media screen and (min-width: 1024px){
+}
+
+@media screen and (min-width: 1600px){
+
+    #main {
+        width: 80%;
+        display: grid;
+        margin: auto;
+    }
+
+    #wrapping {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+}
+
