@@ -16,9 +16,12 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/01pageLayout.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -28,11 +31,12 @@
   <!-- Add your site or application content here -->
   <nav id="mainNav">Hauptnavigation</nav>
   <header>
-    <div id="stage">Stage
-      <figure>
-        <img src="img/01_img.png" alt="Titelbild" id="titelBild">
-      </figure>
-      <h1>Main Headline</h1>
+    <div id="stage">
+      <img src="img/04_img.png" alt="Titelbild" id="titelBild">
+      <div id="stageBox">
+        <h1>Headline</h1>
+        <p>Text</p>
+      </div>
     </div>
   </header>
 
@@ -76,19 +80,102 @@
             <p>
               This is a blind text. <strong>Bold text makes you pay attention.</strong> <sub>Sub</sub>skripts and
               <sup>Super</sup>skrips looks funny.
-              <ul>
-                <li>Some</li>
-                <li>Circles</li>
-              </ul>
             </p>
+            <ul>
+              <li>Some</li>
+              <li>Circles</li>
+            </ul>
+            <ul id="linkList">
+              <li><a href="https://www.google.de/">&rarr; This link leads to the CI.</a></li>
+              <li><a href="https://www.google.de/" target="_blank">&rarr; This link leads to the CI in a new
+                  windows.</a></li>
+            </ul>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Super Nice</th>
+                  <th>Duper Table</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Super</td>
+                  <td>Duper</td>
+                </tr>
+                <tr>
+                  <td>Nice</td>
+                  <td>Table</td>
+                </tr>
+              </tbody>
+            </table>
+            <blockquote>
+              <p id="zitat">"Someone once said inspiring stuff like this"</p>
+            </blockquote>
           </section>
           <section>
             <h3>Form</h3>
+            <form>
+              <label for="textFeld">Text</label><br>
+              <input type="text" id="textFeld" name="textFeld">
+              <br>
+              <label for="pflichtText">Text mandatory*</label><br>
+              <input type="text" id="pflichtText" name="pflichtText" required>
+              <br>
+              <label for="numb">Number</label><br>
+              <input type="number" id="numb" name="numb">
+              <br>
+              <label for="textArea">text area</label><br>
+              <textarea id="textArea" name="textArea" rows="2" cols="50"></textarea>
+              <p>
+                checkbox
+                <br>
+                <input type="checkbox" id="checkBox1" name="checkBox1" value="yes">
+                <label for="checkBox1">yes</label>
+                <br>
+                <input type="checkbox" id="checkBox2" name="checkBox2" value="no">
+                <label for="checkBox2">no</label>
+              </p>
+              <p>
+                radio
+                <br>
+                <input type="radio" id="yes" name="radioButton" value="yes">
+                <label for="male">yes</label><br>
+                <input type="radio" id="no" name="radioButton" value="no">
+                <label for="female">no</label>
+              </p>
+              <label for="top2">select box</label><br>
+              <select name="top2" size="1">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+              <br>
+              <label for="pflichtMail">email field (mandatory)*</label><br>
+              <input type="text" id="pflichtMail" name="pflichtMail" required>
+              <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Cancel">
+                <br>
+                All fields marked with an asterisk (*) are mandatory.
+              </p>
+            </form>
           </section>
         </article>
-        <aside>Aside
+        <aside>
           <section>
             <h4>Subheadline lorem ipsum</h4>
+            <div id="wrapperContact">
+              <img src="img/05_img.png" alt="Kontaktbild">
+              <p id="textContact">
+                <strong>Contact No.3, whose name is even a little bit longer, it will definitely cause a line break. In
+                  fact it is really really really long. Longer than anything else.</strong>
+                <br> Mock Contact Manager
+                <br>
+                <br> T +49 1234567
+                <br> F +49 9876543
+                <br>
+                <a href="mailto:max.mustermann@musterMail.com">&rarr; Send E-Mail</a>
+              </p>
+            </div>
           </section>
           <section>
             <h4>All Document Types</h4>
@@ -96,19 +183,46 @@
         </aside>
       </div>
     </div>
-    <article id="infoTeaser">Artikel2
-      <section>Teaser1
-        <figure></figure>
-        <h4>teaserrow with default teaser with image and link (new window)</h4>
+    <article id="infoTeaser">
+      <section>
+        <img src="img/03_img.png" alt="Erstes Teaserbild" id="teaserImg_1">
+        <h3>teaserrow with default teaser with image and link (new window)</h3>
+        <p>
+          <strong>Set highlight for current Teaser [yes] &gt; element-settings</strong><br>
+          <a href="https://www.google.de/" target="_blank">&rarr; open in new window.</a>
+        </p>
       </section>
       <section>
         <h4>2 teaser</h4>
-        <figure></figure>
+        <img src="img/04_img.png" alt="Zweites Teaserbild" id="teaserImg_2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.
+        </p>
       </section>
       <section>
         <h3>Teaserrow with 3 Teasers: First teaser is a video Teaser</h3>
         <h4>testvid</h4>
+        <p>this is a test video</p>
         <h4>default teaser with text</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.
+        </p>
         <h4>Document list</h4>
       </section>
     </article>

@@ -1,6 +1,23 @@
+body {
+    font-family: "Lato";
+}
+
+a:link {
+    color: rgb(60, 106, 190);
+  }
+
+#stageBox {
+    background-color: rgb(60, 106, 190);
+}
+
 #mainNav, footer {
     background-color: rgb(223, 215, 109);
-    height: 50px;
+}
+
+#stage {
+    color: white;
+    display: grid;
+    grid-row-gap: 0px;
 }
 
 #infoTeaser, #stage {
@@ -10,15 +27,43 @@
 }
 
 nav, article, aside {
-    background-color: cadetblue;
+    background-color: rgb(233, 233, 233);
 }
 
 header, footer, article, aside, nav {
     margin: 3px;
 }
 
-#imageSection {
-    float: left;
+#wrapperContact {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 20px;
+}
+
+#textContact {
+    margin: 0px;
+}
+
+#linkList {
+    list-style: none;
+    padding-left: 0px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: rgb(60, 106, 190);
+    color: white;
+}
+
+#zitat:first-letter {
+    font-size: 200%;
+}
+
+img {
+    width: 100%;
 }
 
 @media screen and (min-width: 480px){
