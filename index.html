@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Page Layout</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="css/01pageLayout.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -25,7 +26,96 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Test 123</p>
+  <nav id="mainNav">Hauptnavigation</nav>
+  <header>
+    <div id="stage">Stage
+      <figure>
+        <img src="img/01_img.png" alt="Titelbild" id="titelBild">
+      </figure>
+      <h1>Main Headline</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="main">
+      <nav>Navigation</nav>
+      <div id="wrapping">
+        <article>
+          <h2>Fundamentals I: Layout, Styling & Semantics</h2>
+          <section>
+            <h3>Image section (Landscape, no caption)</h3>
+            <img id="imageSection" src="img/02_img.png" alt="Image section Bild">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+          <section>
+            <h3>Video section</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+          <section>
+            <h3>Copy text with all format types</h3>
+            <p>
+              This is a blind text. <strong>Bold text makes you pay attention.</strong> <sub>Sub</sub>skripts and
+              <sup>Super</sup>skrips looks funny.
+              <ul>
+                <li>Some</li>
+                <li>Circles</li>
+              </ul>
+            </p>
+          </section>
+          <section>
+            <h3>Form</h3>
+          </section>
+        </article>
+        <aside>Aside
+          <section>
+            <h4>Subheadline lorem ipsum</h4>
+          </section>
+          <section>
+            <h4>All Document Types</h4>
+          </section>
+        </aside>
+      </div>
+    </div>
+    <article id="infoTeaser">Artikel2
+      <section>Teaser1
+        <figure></figure>
+        <h4>teaserrow with default teaser with image and link (new window)</h4>
+      </section>
+      <section>
+        <h4>2 teaser</h4>
+        <figure></figure>
+      </section>
+      <section>
+        <h3>Teaserrow with 3 Teasers: First teaser is a video Teaser</h3>
+        <h4>testvid</h4>
+        <h4>default teaser with text</h4>
+        <h4>Document list</h4>
+      </section>
+    </article>
+  </main>
+
+  <footer>Footer</footer>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
