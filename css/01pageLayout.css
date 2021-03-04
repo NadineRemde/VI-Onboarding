@@ -6,7 +6,11 @@ a:link {
     color: rgb(60, 106, 190);
   }
 
-#stageBox {
+.video {
+    width: 100%;
+}
+
+.stageBox {
     background-color: rgb(60, 106, 190);
 }
 
@@ -14,56 +18,95 @@ a:link {
     background-color: rgb(223, 215, 109);
 }
 
-#stage {
+.stage {
     color: white;
     display: grid;
     grid-row-gap: 0px;
 }
 
-#infoTeaser, #stage {
+.stage {
     background-color: lightgray;
     margin: 3px;
     margin-bottom: 15px;
-}
-
-nav, article, aside {
-    background-color: rgb(233, 233, 233);
 }
 
 header, footer, article, aside, nav {
     margin: 3px;
 }
 
-#wrapperContact {
+.wrapperContact {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-column-gap: 20px;
 }
 
-#textContact {
+.textContact {
     margin: 0px;
 }
 
-#linkList {
+.linkList {
     list-style: none;
     padding-left: 0px;
 }
 
-table {
+.table {
     border-collapse: collapse;
+    width: 90%;
+    justify-content: center;
+    margin-left: 5%;
+    
 }
 
-thead {
+.frame {
+    border: 1px solid silver;
+    padding: 5px;
+
+}
+
+th {
     background-color: rgb(60, 106, 190);
     color: white;
+    text-align: left;
 }
 
-#zitat:first-letter {
+.quote:first-letter {
     font-size: 200%;
 }
 
-img {
+.imgBIG {
     width: 100%;
+}
+
+.grayBox {
+    background-color: rgb(230, 230, 230);
+}
+
+.navLine li{
+    display: inline;
+    list-style-type: none;
+}
+
+.search {
+    position: relative;
+    left: 25%;
+    width: 60%;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+.mainLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+hr {
+    width: 90%;
 }
 
 @media screen and (min-width: 480px){
@@ -80,7 +123,7 @@ img {
 
 @media screen and (min-width: 1600px){
 
-    #main {
+    /* #main {
         width: 80%;
         display: grid;
         margin: auto;
@@ -89,7 +132,7 @@ img {
     #wrapping {
         display: grid;
         grid-template-columns: 3fr 1fr;
-    }
+    } */
 
 }
 
