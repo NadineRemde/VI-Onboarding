@@ -130,7 +130,7 @@ th,
 
 .searchBox {
   border-radius: 40px;
-  width: 214px;
+  width: 217px;
   position: relative;
   left: 25%;
   border-radius: 40px;
@@ -554,7 +554,7 @@ th {
 
 @media screen and (min-width: 1600px) {
   .searchBox {
-    left: 80%;
+    left: 72%;
   }
 
   .mainLinks {
@@ -563,7 +563,8 @@ th {
 
   .headerImgV2 {
     width: 1280px;
-    margin-left: 10%;
+    height: 400px;
+    margin-left: 16%;
   }
 
   .search,
@@ -571,8 +572,8 @@ th {
   .navLine,
   .wrapping,
   .teaser {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 16%;
+    margin-right: 16%;
   }
 
   .navLine {
@@ -585,29 +586,34 @@ th {
 
   .stage {
     background-color: rgb(1, 157, 211);
+    padding-bottom: 9px;
   }
 
   .grayBox {
-    padding-bottom: 270px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-bottom: 300px;
+    padding-left: 16%;
+    padding-right: 16%;
   }
 
   .footer {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 16%;
+    padding-right: 16%;
   }
 
   .hrSpecial {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 16%;
+    margin-right: 16%;
   }
 
   .stageBox {
-    width: 25%;
-    left: 55%;
-    bottom: 70%;
+    width: 17%;
+    left: 54%;
+    bottom: 75%;
     padding-top: 25px;
     padding-bottom: 90px;
+  }
+
+  .imgFloat {
+    padding-bottom: 10px;
   }
 }
