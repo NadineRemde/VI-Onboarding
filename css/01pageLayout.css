@@ -48,7 +48,6 @@ h4,
   background-color: rgb(74, 82, 89);
 }
 
-.navLine,
 .quote,
 .hrSpecial {
   margin-top: 15%;
@@ -200,15 +199,18 @@ th {
 
 .quote {
   font-size: 125%;
-  line-height: 1.5;
+  line-height: 1.5rem;
   margin-left: 0px;
   margin: 0px;
 }
 
-.firstChar::first-letter {
-  font-size: 125%;
+.firstChar::before {
+  content: '"';
+  font-size: 500%;
   font-weight: bold;
-  line-height: 0;
+  line-height: 1.5rem;
+  position: relative;
+  top: 47px;
 }
 
 .form {
@@ -390,13 +392,17 @@ th {
 
   .grayBox {
     padding-top: 2%;
-    padding-bottom: 3%;
+    padding-bottom: 100px;
   }
 
   .teaserBox,
   .teaserGrid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
+  }
+
+  .teaserGrid21 {
+    display: none;
   }
 
   .hrSpecial {
@@ -409,6 +415,10 @@ th {
 
   .teaserGrid2 {
     padding-top: 13%;
+  }
+
+  .teaserGrid3 {
+    margin-bottom: 50px;
   }
 }
 
@@ -433,7 +443,8 @@ th {
   }
 
   .stage {
-    display: inline;
+    position: absolute;
+    height: 40%;
   }
 
   .stageBox {
@@ -446,7 +457,11 @@ th {
     position: relative;
     opacity: 75%;
     left: 55%;
-    top: -215px;
+    bottom: 220px;
+  }
+
+  .main {
+    margin-top: 35%;
   }
 
   .noTarget {
@@ -488,7 +503,13 @@ th {
 
   /* Header */
   .stageBox {
-    top: 30%;
+    width: 30%;
+    left: 57%;
+    bottom: 60%;
+  }
+
+  .noTarget {
+    width: 45%;
   }
 
   /* Main Content */
@@ -505,7 +526,88 @@ th {
   h2 {
     margin-top: 0px;
   }
+
+  .grayBox {
+    padding-bottom: 130px;
+  }
+
+  .linkList li {
+    display: inline;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+  }
+
+  .teaserGrid22 {
+    display: none;
+  }
+
+  .teaserGrid21 {
+    display: flex;
+  }
+  .teaserGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1600px) {
+  .searchBox {
+    left: 80%;
+  }
+
+  .mainLinks {
+    width: 35%;
+  }
+
+  .headerImgV2 {
+    width: 1280px;
+    margin-left: 10%;
+  }
+
+  .search,
+  .mainLinks,
+  .navLine,
+  .wrapping,
+  .teaser {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .navLine {
+    margin-top: 0px;
+  }
+
+  .main {
+    margin-top: 28%;
+  }
+
+  .stage {
+    background-color: rgb(1, 157, 211);
+  }
+
+  .grayBox {
+    padding-bottom: 270px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .hrSpecial {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .stageBox {
+    width: 25%;
+    left: 55%;
+    bottom: 70%;
+    padding-top: 25px;
+    padding-bottom: 90px;
+  }
 }
