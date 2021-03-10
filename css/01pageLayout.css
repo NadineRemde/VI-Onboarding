@@ -3,7 +3,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-
 h2 {
   font-size: 40px;
 }
@@ -112,7 +111,6 @@ th,
 .mainLinks,
 .form,
 .wrapperContact,
-.docArea,
 .searchBox {
   display: grid;
 }
@@ -307,49 +305,24 @@ th {
 
 /* Document Part */
 .hr,
-.fas,
-.far {
+.fas {
   margin: 0px;
 }
 
-.fas,
-.far {
-  font-family: "FontAwesome";
-  font-size: 350%;
-  color: silver;
+.svg {
+  width: 55px;
+  height: 78px;
+  fill: silver;
   margin-right: 10px;
 }
 
+.fas{
+  font-family: "FontAwesome";
+}
+
 .docArea {
-  grid-template-columns: 1fr 4fr;
-}
+  display: flex;
 
-.fa-file-word::before {
-  content: "\f1c2";
-}
-
-.fa-file-excel::before {
-  content: "\f1c3";
-}
-
-.fa-file-archive::before {
-  content: "\f1c6";
-}
-
-.fa-file-image::before {
-  content: "\f1c5";
-}
-
-.fa-file-pdf::before {
-  content: "\f1c1";
-}
-
-.fa-file-video::before {
-  content: "\f1c8";
-}
-
-.fa-file::before {
-  content: "\f15b";
 }
 
 .hrBottom {
@@ -737,5 +710,5 @@ th {
     padding-bottom: 10px;
   }
 }
-}
+
 
