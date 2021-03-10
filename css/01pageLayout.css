@@ -3,6 +3,19 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
 .search,
 .mainLinks,
 .navLine,
@@ -43,7 +56,6 @@ h4,
   color: rgb(74, 82, 89);
 }
 
-.cancel,
 .footer {
   background-color: rgb(74, 82, 89);
 }
@@ -60,7 +72,7 @@ th {
 }
 
 .imgBIG,
-.header,
+.stage,
 .table,
 .video {
   width: 100%;
@@ -79,8 +91,13 @@ th {
 
 .search,
 .grayBox,
-.searchBox {
+.searchBox,
+.cancel {
   background-color: rgb(244, 242, 243);
+}
+
+.cancel {
+  background-color: rgb(190, 190, 190);
 }
 
 .headline,
@@ -98,6 +115,25 @@ th,
 .docArea,
 .searchBox {
   display: grid;
+}
+
+.mainLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link1,
+.link2 {
+  width: 105px;
+}
+
+.link3,
+.link4 {
+  width: 95px;
+}
+
+.link5 {
+  width: 120px;
 }
 
 .search,
@@ -141,7 +177,6 @@ th,
   outline: none;
 }
 
-.mainLinks,
 .searchBox {
   grid-template-columns: 1fr 1fr;
 }
@@ -158,13 +193,21 @@ a.searchIcon {
 }
 
 .stageBox {
-  padding-top: 1%;
-  padding-bottom: 10%;
+  padding-top: 1px;
+  padding-bottom: 30px;
 }
 
 .noTarget {
   background-color: white;
   padding: 2.5%;
+}
+
+.arrow {
+  padding-left: 40px;
+}
+
+.arrow2 {
+  font-size: 10pt;
 }
 
 .headerImgV2 {
@@ -190,7 +233,7 @@ a.searchIcon {
 
 .frame {
   border: 1px solid silver;
-  padding: 5px;
+  padding: 10px 10px 10px 5px;
 }
 
 th {
@@ -274,6 +317,7 @@ th {
   font-family: "FontAwesome";
   font-size: 350%;
   color: silver;
+  margin-right: 10px;
 }
 
 .docArea {
@@ -318,9 +362,27 @@ th {
     left: 50%;
   }
 
+  .link1,
+  .link2 {
+    width: 115px;
+  }
+
+  .link3 {
+    width: 145px;
+  }
+
+  .link4 {
+    width: 85px;
+  }
+
   /* Header */
-  .mainLinks {
-    grid-template-columns: 1fr 1fr 1fr;
+  .noTarget {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .arrow {
+    padding-left: 50px;
   }
 
   /* Breafcrumb Navigation */
@@ -336,8 +398,7 @@ th {
   .imgFloat {
     width: 50%;
     float: left;
-    padding-top: 3%;
-    padding-right: 5%;
+    padding: 7px 25px 0px 0px;
   }
 }
 
@@ -347,9 +408,18 @@ th {
     left: 60%;
   }
 
+  .link1,
+  .link2,
+  .link3 {
+    width: 115px;
+  }
+
+  .link4 {
+    width: 150px;
+  }
   /* Header */
-  .mainLinks {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .arrow {
+    padding-left: 40px;
   }
 
   /* Breafcrumb Navigation */
@@ -358,6 +428,10 @@ th {
   }
 
   /* Main Content */
+  .imgFloat {
+    padding: 6px 25px 10px 0px;
+  }
+
   .formButtonS,
   .teaserBox,
   .teaserGrid {
@@ -427,13 +501,27 @@ th {
   .searchBox {
     left: 65%;
   }
-  .mainLinks {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 75%;
-    margin-bottom: 1%;
+
+  .link1,
+  .link2,
+  .link3,
+  .link5 {
+    width: 110px;
+  }
+
+  .link4 {
+    width: 85px;
+  }
+
+  .link3 {
+    width: 105px;
   }
 
   /* Header */
+  .arrow {
+    padding-left: 60px;
+  }
+
   .headerImgV1 {
     display: none;
   }
@@ -444,35 +532,36 @@ th {
 
   .stage {
     position: absolute;
-    height: 40%;
   }
 
   .stageBox {
     width: 35%;
-    height: 130px;
-    margin: 0px;
-    padding-left: 5%;
-    padding-top: 0;
-    padding-bottom: 5%;
     position: relative;
-    opacity: 75%;
+    background: rgb(1, 157, 211, 0.75);
     left: 55%;
     bottom: 220px;
   }
-
-  .main {
-    margin-top: 35%;
-  }
-
   .noTarget {
     display: flex;
     align-items: left;
     width: 60%;
   }
 
+  /* Main Content */
+  .main {
+    margin-top: 35%;
+  }
+
   .form {
     display: grid;
     grid-template-columns: 1fr 4fr;
+  }
+
+  .label {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 25px;
   }
 
   .formCheckRadio {
@@ -496,23 +585,30 @@ th {
     left: 70%;
     margin-top: 1%;
   }
-  .mainLinks {
-    width: 50%;
-    margin-bottom: 1%;
-  }
 
   /* Header */
   .stageBox {
     width: 30%;
     left: 57%;
-    bottom: 60%;
   }
 
   .noTarget {
-    width: 45%;
+    width: 50%;
+  }
+
+  .arrow {
+    padding-left: 50px;
   }
 
   /* Main Content */
+  .navLine {
+    padding-top: 20px;
+  }
+
+  .imgFloat {
+    padding: 7px 25px 10px 0px;
+  }
+
   .wrapping {
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -527,6 +623,14 @@ th {
     margin-top: 0px;
   }
 
+  .form {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .formCheckRadio {
+    grid-template-columns: 1fr 3fr;
+  }
+
   .grayBox {
     padding-bottom: 130px;
   }
@@ -536,8 +640,11 @@ th {
   }
 
   .footer {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
+    display: flex;
+  }
+
+  .pFooter {
+    width: 190px;
   }
 
   .teaserGrid22 {
@@ -554,66 +661,81 @@ th {
 
 @media screen and (min-width: 1600px) {
   .searchBox {
-    left: 72%;
+    left: 1223px;
   }
 
-  .mainLinks {
-    width: 35%;
+  .noTarget {
+    width: 40%;
+  }
+
+  .arrow {
+    padding-left: 10px;
   }
 
   .headerImgV2 {
     width: 1280px;
     height: 400px;
-    margin-left: 16%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(1, 157, 211);
   }
 
-  .search,
-  .mainLinks,
-  .navLine,
-  .wrapping,
-  .teaser {
-    margin-left: 16%;
-    margin-right: 16%;
-  }
-
-  .navLine {
+  .wrapping {
     margin-top: 0px;
   }
 
-  .main {
-    margin-top: 28%;
+  .mainLinks {
+    margin: 20px 10% 20px 10%;
   }
 
-  .stage {
-    background-color: rgb(1, 157, 211);
-    padding-bottom: 9px;
+  .search,
+  .navLine,
+  .wrapping,
+  .teaser {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .navLine {
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    margin-top: 27%;
   }
 
   .grayBox {
     padding-bottom: 300px;
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .footer {
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .hrSpecial {
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .headline {
+    font-size: 50px;
+    padding-top: 15px;
   }
 
   .stageBox {
-    width: 17%;
-    left: 54%;
-    bottom: 75%;
-    padding-top: 25px;
-    padding-bottom: 90px;
+    width: 380px;
+    left: 55%;
+    bottom: 330px;
+    padding: 0px 70px 30px 40px;
   }
 
   .imgFloat {
     padding-bottom: 10px;
   }
 }
+}
+

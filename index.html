@@ -38,24 +38,25 @@
     </div>
 
     <div class="mainLinks">
-      <a href="#link1">Link 1 Lorem</a>
-      <a href="#link2">Link 2 ipsum</a>
-      <a href="#link3">Link 3 dolor</a>
-      <a href="#link4">Link 4 sit</a>
-      <a href="#link5">Link 5 amet</a>
+      <a href="#link1" class="link1">Link 1 Lorem</a>
+      <a href="#link2" class="link2">Link 2 ipsum</a>
+      <a href="#link3" class="link3">Link 3 dolor</a>
+      <a href="#link4" class="link4">Link 4 sit</a>
+      <a href="#link5" class="link5">Link 5 amet</a>
     </div>
   </nav>
 
   <!-- Header Area -->
-  <header class="header stage">
-      <img src="img/04_img.png" alt="Titelbild" class="imgBIG headerImgV1" />
-      <img src="img/01_img.png" alt="Titelbild" class="imgBIG headerImgV2" />
-      <div class="stageBox">
-        <h1 class="headline">Headline</h1>
-        <p>Text</p>
-        <button class="noTarget" type="button">no target&emsp; &#10132;</button>
-      </div>
+  <header class="stage">
+    <img src="img/04_img.png" alt="Titelbild" class="imgBIG headerImgV1" />
+    <img src="img/01_img.png" alt="Titelbild" class="imgBIG headerImgV2" />
+    <div class="stageBox">
+      <h1 class="headline">Headline</h1>
+      <p>Text</p>
+      <button class="noTarget" type="button">no target <span class="arrow">&#10132;</span></button>
+    </div>
   </header>
+
 
   <!-- Main Area -->
   <main>
@@ -76,23 +77,25 @@
           <h2 id="link1">Fundamentals I: Layout, Styling & Semantics</h2>
           <section>
             <h3><span class="lineBreakVariable">Image section</span> (Landscape, no caption)</h3>
-            <img class="imgBIG imgFloat" src="img/02_img.png" alt="Image section Bild" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div>
+              <img class="imgBIG imgFloat" src="img/02_img.png" alt="Image section Bild" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
           </section>
           <section>
             <h3>Video section</h3>
@@ -127,10 +130,11 @@
             </ul>
             <div class="links">
               <p>
-                <a href="https://www.google.de/">&rarr; This link leads to the CI.</a>
+                <a href="https://www.google.de/"><span class="arrow2">&#10132;</span> This link leads to the CI.</a>
               </p>
               <p>
-                <a href="https://www.google.de/" target="_blank">&rarr; This link leads to the CI in a new windows.</a>
+                <a href="https://www.google.de/" target="_blank"><span class="arrow2">&#10132;</span> This link leads to
+                  the CI in a new windows.</a>
               </p>
             </div>
 
@@ -164,27 +168,27 @@
             <h3 id="link2">Form</h3>
             <form>
               <div class="form">
-                <label for="textField">Text</label>
+                <label class="label" for="textField">Text</label>
                 <input type="text" id="textField" name="textField" class="formFrames" />
 
-                <label for="requiredText">Text mandatory*</label>
+                <label class="label" for="requiredText">Text mandatory*</label>
                 <input type="text" id="requiredText" name="requiredText" class="formFrames" required />
 
-                <label for="numb">Number</label>
+                <label class="label" for="numb">Number</label>
                 <input type="number" id="numb" name="numb" class="formFrames" />
 
-                <label for="textArea">text area</label>
+                <label class="label" for="textArea">text area</label>
                 <textarea id="textArea" name="textArea" rows="2" cols="50" class="formFrames"></textarea>
               </div>
               <div class="form formCheckRadio">
-                <span class="lineBreak">checkbox</span>
+                <span class="lineBreak label">checkbox</span>
                 <div>
                   <span class="lineBreak"><input type="checkbox" id="checkBox1" name="checkBox1" value="yes" />
                     <label for="checkBox1">yes</label></span>
                   <input type="checkbox" id="checkBox2" name="checkBox2" value="no" />
                   <label for="checkBox2">no</label>
                 </div>
-                <span class="lineBreak">radio</span>
+                <span class="lineBreak label">radio</span>
                 <div>
                   <span class="lineBreak"><input type="radio" id="yes" name="radioButton" value="yes" />
                     <label for="yes">yes</label></span>
@@ -193,12 +197,12 @@
                 </div>
               </div>
               <div class="form">
-                <label for="top2">select box</label>
+                <label class="label" for="top2">select box</label>
                 <select id="top2" name="top2" class="formFrames">
                   <option>yes</option>
                   <option>no</option>
                 </select>
-                <label for="requiredMail">email field (mandatory)*</label>
+                <label class="label" for="requiredMail"><span>email field</span> (mandatory)*</label>
                 <input type="text" id="requiredMail" name="requiredMail" class="formFrames" required />
               </div>
 
@@ -227,7 +231,7 @@
                 <p>
                   <span class="lineBreak">T +49 1234567</span>
                   <span class="lineBreak">F +49 9876543</span>
-                  <a href="mailto:max.mustermann@musterMail.com">&rarr; Send E-Mail</a>
+                  <a href="mailto:max.mustermann@musterMail.com"><span class="arrow2">&#10132;</span> Send E-Mail</a>
                 </p>
               </div>
             </div>
@@ -288,7 +292,7 @@
               element-settings</strong></span>
         </p>
         <p class="teaser">
-          <a href="https://www.google.de/" target="_blank">&rarr; open in new window.</a>
+          <a href="https://www.google.de/" target="_blank"><span class="arrow2">&#10132;</span> open in new window.</a>
         </p>
       </section>
       <section class="teaser teaserBox">
@@ -362,15 +366,15 @@
 
   <!-- Footer Area -->
   <footer class="footer">
-    <p>
+    <p class="pFooter">
       <span class="lineBreak">&#169; 2018 Ninja Developers</span>
     </p>
     <ul class="linkList">
       <li>
-        <a href="https://www.google.de/">&rarr; target same window &ensp;</a>
+        <a href="https://www.google.de/"><span class="arrow2">&#10132;</span> target same window &ensp;</a>
       </li>
       <li>
-        <a href="https://www.google.de/" target="_blank">&rarr; target new windows</a>
+        <a href="https://www.google.de/" target="_blank"><span class="arrow2">&#10132;</span> target new windows</a>
       </li>
     </ul>
   </footer>
