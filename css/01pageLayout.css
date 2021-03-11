@@ -514,11 +514,6 @@ th {
     left: 55%;
     bottom: 220px;
   }
-  .noTarget {
-    display: flex;
-    align-items: left;
-    width: 60%;
-  }
 
   /* Main Content */
   .main {
@@ -679,7 +674,7 @@ th {
   }
 
   .grayBox {
-    padding-bottom: 300px;
+    padding-bottom: 270px;
     padding-left: 10%;
     padding-right: 10%;
   }
