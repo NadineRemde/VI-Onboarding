@@ -466,7 +466,7 @@ th {
   /* Header Area*/
   .stage {
     position: absolute;
-   height: 240px;
+    height: 240px;
   }
 
   .headerImgV1 {
@@ -474,8 +474,7 @@ th {
   }
 
   .headerImgV2 {
-    display: flex;
-  }
+    display: flex;  }
 
   .stageBox {
     width: 255px;
@@ -505,6 +504,7 @@ th {
   /* Main Content */
   .main {
     margin-top: 290px;
+    
   }
 
   /* Main Area */
@@ -650,6 +650,10 @@ th {
 }
 
 @media screen and (min-width: 1600px) {
+  body {
+    margin: 0 auto;
+  }
+
   /* Main Navigation */
   .searchBox {
     left: 1210px;
@@ -662,10 +666,9 @@ th {
   /* Header Area */
   .headerImgV2 {
     background-color: rgb(1, 157, 211);
-    width: 1280px;
-    height: 400px;
-    padding-left: 160px;
-    padding-right: 160px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .stageBox {
@@ -717,7 +720,7 @@ th {
 
   /* Teaser Area */
   .grayBox {
-    padding: 20px 10% 300px 190px;
+    padding: 20px 190px 300px 190px;
   }
 
   .teaser {
