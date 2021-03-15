@@ -22,6 +22,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa" />
 </head>
 
@@ -30,27 +32,32 @@
 
   <!-- Main Navigation -->
   <nav class="mainNav">
-    <input type="search" class="search" placeholder="Search &#09; &#09; &#09; &#128269;" />
+    <div class="searchBox">
+      <input type="search" class="search" placeholder="Search" />
+      <a class="fas fa-search searchIcon"></a>
+    </div>
+
     <div class="mainLinks">
-      <a href="/">Link 1 Lorem</a>
-      <a href="/">Link 2 ipsum</a>
-      <a href="/">Link 3 dolor</a>
-      <a href="/">Link 4 sit</a>
-      <a href="/">Link 5 amet</a>
+      <a href="#link1" class="link1">Link 1 Lorem</a>
+      <a href="#link2" class="link2">Link 2 ipsum</a>
+      <a href="#link3" class="link3">Link 3 dolor</a>
+      <a href="#link4" class="link4">Link 4 sit</a>
+      <a href="#link5" class="link5">Link 5 amet</a>
     </div>
   </nav>
 
+
   <!-- Header Area -->
-  <header class="header">
-    <div class="stage">
-      <img src="img/04_img.png" alt="Titelbild" class="imgBIG" />
-      <div class="stageBox">
-        <h1 class="headline">Headline</h1>
-        <p>Text</p>
-        <button class="noTarget" type="button">no target&emsp; &#10132;</button>
-      </div>
+  <header class="stage">
+    <img src="img/04_img.png" alt="Titelbild" class="imgBIG headerImgV1" />
+    <img src="img/01_img.png" alt="Titelbild" class="imgBIG headerImgV2" />
+    <div class="stageBox">
+      <h1 class="headline">Headline</h1>
+      <p>Text</p>
+      <button class="noTarget" type="button">no target <span class="arrow">&#10132;</span></button>
     </div>
   </header>
+
 
   <!-- Main Area -->
   <main>
@@ -68,28 +75,30 @@
       <!-- Main Content -->
       <div class="wrapping">
         <section>
-          <h2>Fundamentals I: Layout, Styling & Semantics</h2>
+          <h2 id="link1">Fundamentals I: Layout, Styling & Semantics</h2>
           <section>
-            <h3><span class="lineBreak">Image section</span>(Landscape, no caption)</h3>
-            <img class="imgBIG" src="img/02_img.png" alt="Image section Bild" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h3>Image section (Landscape, no caption)</h3>
+            <div>
+              <img class="imgBIG imgFloat" src="img/02_img.png" alt="Image section Bild" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
           </section>
-          <section>
+          <section class="videoSection">
             <h3>Video section</h3>
             <video class="video" src="img/demoVid.mp4" controls></video>
             <p>
@@ -122,10 +131,11 @@
             </ul>
             <div class="links">
               <p>
-                <a href="https://www.google.de/">&rarr; This link leads to the CI.</a>
+                <a href="https://www.google.de/"><span class="arrow2">&#10132;</span> This link leads to the CI.</a>
               </p>
               <p>
-                <a href="https://www.google.de/" target="_blank">&rarr; This link leads to the CI in a new windows.</a>
+                <a href="https://www.google.de/" target="_blank"><span class="arrow2">&#10132;</span> This link leads to
+                  the CI in a new windows.</a>
               </p>
             </div>
 
@@ -147,11 +157,8 @@
 
             <!-- Quote -->
             <blockquote class="quote">
-              <div class="quoteBig">
-                &bdquo;
-              </div>
-              <p>
-              &emsp; &ensp;Someone once said inspiring stuff like this<sup>&rdquo;</sup>
+              <p class="firstChar">
+                Someone once said inspiring stuff like this"
               </p>
             </blockquote>
 
@@ -159,81 +166,210 @@
 
           <!-- Form -->
           <section>
-            <h3>Form</h3>
-            <form class="form">
-              <div></div>
-              <label for="textField">Text</label>
-              <input type="text" id="textField" name="textField" class="formFrames" />
+            <h3 id="link2">Form</h3>
+            <form>
+              <div class="form">
+                <label class="label" for="textField">Text</label>
+                <input type="text" id="textField" name="textField" class="formFrames" />
 
-              <label for="requiredText">Text mandatory*</label>
-              <input type="text" id="requiredText" name="requiredText" class="formFrames" required />
+                <label class="label" for="requiredText">Text mandatory*</label>
+                <input type="text" id="requiredText" name="requiredText" class="formFrames" required />
 
-              <label for="numb">Number</label>
-              <input type="number" id="numb" name="numb" class="formFrames" />
+                <label class="label" for="numb">Number</label>
+                <input type="number" id="numb" name="numb" class="formFrames" />
 
-              <label for="textArea">text area</label>
-              <textarea id="textArea" name="textArea" rows="2" cols="50" class="formFrames"></textarea>
-              <p>
-                <span class="lineBreak">checkbox</span>
-                <span class="lineBreak"><input type="checkbox" id="checkBox1" name="checkBox1" value="yes" />
-                  <label for="checkBox1">yes</label></span>
-                <input type="checkbox" id="checkBox2" name="checkBox2" value="no" />
-                <label for="checkBox2">no</label>
-              </p>
-              <p>
-                <span class="lineBreak">radio</span>
-                <span class="lineBreak"><input type="radio" id="yes" name="radioButton" value="yes" />
-                  <label for="yes">yes</label></span>
-                <input type="radio" id="no" name="radioButton" value="no" />
-                <label for="no">no</label>
-              </p>
-              <label for="top2">select box</label>
-              <select id="top2" name="top2" class="formFrames">
-                <option>yes</option>
-                <option>no</option>
-              </select>
-              <label for="requiredMail">email field (mandatory)*</label>
-              <input type="text" id="requiredMail" name="requiredMail" class="formFrames" required />
+                <label class="label" for="textArea">text area</label>
+                <textarea id="textArea" name="textArea" rows="2" cols="50" class="formFrames"></textarea>
+              </div>
+              <div class="formCheckRadio">
+                <span class="fcrBox1 label">checkbox</span>
+                <div class="fcrBox2">
+                  <input type="checkbox" id="checkBox1" name="checkBox1" value="yes" />
+                  <label for="checkBox1">yes</label>
+                  <input type="checkbox" id="checkBox2" name="checkBox2" value="no" />
+                  <label for="checkBox2">no</label>
+                </div>
+                <span class="fcrBox3 label">radio</span>
+                <div class="fcrBox4">
+                  <input type="radio" id="yes" name="radioButton" value="yes" />
+                  <label for="yes">yes</label>
+                  <input type="radio" id="no" name="radioButton" value="no" />
+                  <label for="no">no</label>
+                </div>
+              </div>
+              <div class="form">
+                <label class="label" for="top2">select box</label>
+                <select id="top2" name="top2" class="formFrames">
+                  <option>yes</option>
+                  <option>no</option>
+                </select>
+                <label class="label" for="requiredMail"><span>email field</span> (mandatory)*</label>
+                <input type="text" id="requiredMail" name="requiredMail" class="formFrames" required />
+              </div>
+
               <hr class="hr" />
-              <p>
-                <input class="sumit formButton" type="submit" value="Send" />
-                <span class="lineBreak"><input class="cancel formButton" type="reset" value="Cancel" /></span>
-                <strong>All fields marked with an asterisk (*) are mandatory.</strong>
-              </p>
+              <div class="formButtonS">
+                <div class="scButtonBox">
+                  <input class="sumit formButton" type="submit" value="Send" />
+                  <input class="cancel formButton" type="reset" value="Cancel" />
+                </div>
+                <p><strong>All fields marked with an asterisk (*) are mandatory.</strong></p>
+              </div>
             </form>
           </section>
         </section>
 
         <!-- Aside Area -->
-        <aside>
-          <section>
-            <h4>Subheadline lorem ipsum</h4>
+        <aside class="aside">
+          <section class="contact">
+            <h4 id="link3">Subheadline lorem ipsum</h4>
             <hr class="hr" />
             <div class="wrapperContact">
               <img src="img/05_img.png" alt="Kontaktbild" class="contactImg" />
               <div class="textContact">
-                <span class="lineBreak"><strong>Contact No.3, whose name is even a little bit longer, it
+                <div><strong>Contact No.3, whose name is even a little bit longer, it
                     will definitely cause a line break. In fact it is really
-                    really really long. Longer than anything else.</strong></span>
-                <span class="lineBreak">Mock Contact Manager</span>
-                <p>
-                  <span class="lineBreak">T +49 1234567</span>
-                  <span class="lineBreak">F +49 9876543</span>
-                  <a href="mailto:max.mustermann@musterMail.com">&rarr; Send E-Mail</a>
-                </p>
+                    really really long. Longer than anything else.</strong></div>
+                <div>
+                  <p class="lbV2">Mock Contact Manager</p>
+                </div>
+                <div>
+                  <div>
+                    <p class="lb">T +49 1234567</p>
+                  </div>
+                  <div>
+                    <p class="lb">F +49 9876543</p>
+                  </div>
+                  <a href="mailto:max.mustermann@musterMail.com"><span class="arrow2">&#10132;</span> Send E-Mail</a>
+                </div>
               </div>
             </div>
             <hr class="hr" />
           </section>
-          <section>
-            <h4>All Document Types</h4>
+          <section class="svgSection">
+            <h4 id="link4" class="docType">All Document Types</h4>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-pdf</title>
+                <path
+                  d="M26.313 18.421c-0.427-0.42-1.372-0.643-2.812-0.662-0.974-0.011-2.147 0.075-3.38 0.248-0.552-0.319-1.122-0.665-1.568-1.083-1.202-1.122-2.205-2.68-2.831-4.394 0.041-0.16 0.075-0.301 0.108-0.444 0 0 0.677-3.846 0.498-5.146-0.025-0.178-0.040-0.23-0.088-0.369l-0.059-0.151c-0.184-0.425-0.545-0.875-1.111-0.85l-0.341-0.011c-0.631 0-1.146 0.323-1.281 0.805-0.411 1.514 0.013 3.778 0.781 6.711l-0.197 0.478c-0.55 1.34-1.238 2.689-1.846 3.88l-0.079 0.155c-0.639 1.251-1.22 2.313-1.745 3.213l-0.543 0.287c-0.040 0.021-0.97 0.513-1.188 0.645-1.852 1.106-3.079 2.361-3.282 3.357-0.065 0.318-0.017 0.725 0.313 0.913l0.525 0.264c0.228 0.114 0.468 0.172 0.714 0.172 1.319 0 2.85-1.643 4.959-5.324 2.435-0.793 5.208-1.452 7.638-1.815 1.852 1.043 4.129 1.767 5.567 1.767 0.255 0 0.475-0.024 0.654-0.072 0.276-0.073 0.508-0.23 0.65-0.444 0.279-0.42 0.335-0.998 0.26-1.59-0.023-0.176-0.163-0.393-0.315-0.541zM6.614 25.439c0.241-0.658 1.192-1.958 2.6-3.111 0.088-0.072 0.306-0.276 0.506-0.466-1.472 2.348-2.458 3.283-3.106 3.577zM14.951 6.24c0.424 0 0.665 1.069 0.685 2.070s-0.214 1.705-0.505 2.225c-0.241-0.77-0.357-1.984-0.357-2.778 0 0-0.018-1.517 0.177-1.517v0zM12.464 19.922c0.295-0.529 0.603-1.086 0.917-1.677 0.765-1.447 1.249-2.58 1.609-3.511 0.716 1.303 1.608 2.41 2.656 3.297 0.131 0.111 0.269 0.222 0.415 0.333-2.132 0.422-3.974 0.935-5.596 1.558v0zM25.903 19.802c-0.13 0.081-0.502 0.128-0.741 0.128-0.772 0-1.727-0.353-3.066-0.927 0.515-0.038 0.986-0.057 1.409-0.057 0.774 0 1.004-0.003 1.761 0.19s0.767 0.585 0.637 0.667v0z">
+                </path>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.121 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841v0zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268v0zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">PDF - Title</a>
+                <p class="lb">Mar 07, 2017|PDF|88 kb</p>
+              </div>
+            </div>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-picture</title>
+                <path d="M26 28h-20v-4l6-10 8.219 10 5.781-4v8z"></path>
+                <path d="M26 15c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3c1.657 0 3 1.343 3 3z"></path>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">Image (JPG,GIF,EPS) - Title</a>
+                <p class="lb">Mar 19, 2015|JPG|1.49 mb</p>
+              </div>
+            </div>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-zip</title>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.121 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841v0 0zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268v0 0zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+                <path d="M8 2h4v2h-4v-2z"></path>
+                <path d="M12 4h4v2h-4v-2z"></path>
+                <path d="M8 6h4v2h-4v-2z"></path>
+                <path d="M12 8h4v2h-4v-2z"></path>
+                <path d="M8 10h4v2h-4v-2z"></path>
+                <path d="M12 12h4v2h-4v-2z"></path>
+                <path d="M8 14h4v2h-4v-2z"></path>
+                <path d="M12 16h4v2h-4v-2z"></path>
+                <path
+                  d="M8 26.5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-2.5v-2h-4v8.5zM14 24v2h-4v-2h4z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">ZIP - Download</a>
+                <p class="lb">Aug 03, 2009|ZIP|566 kb</p>
+              </div>
+            </div>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-word</title>
+                <path
+                  d="M19.993 14.872h1.382l-1.594 7.068-2.073-9.938h-3.33l-2.41 9.938-1.807-9.938h-3.481l3.534 15.996h3.401l2.384-9.46 2.133 9.46h3.136l4.051-15.996h-5.326v2.87z">
+                </path>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.121 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841v0zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268v0zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">Word - Document Title</a>
+                <p class="lb">Mar 07, 2017|DOC|80 kb</p>
+              </div>
+            </div>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-excel</title>
+                <path
+                  d="M23.22 12h-4.228l-2.992 4.407-2.992-4.407h-4.228l5.068 7.577-5.718 8.423h7.87v-2.862h-1.567l1.567-2.344 3.481 5.205h4.389l-5.718-8.423 5.068-7.577z">
+                </path>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.121 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841v0zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268v0zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">Excel - Document Title</a>
+                <p class="lb">Sep 29, 2014|XLSX|169 kb</p>
+              </div>
+            </div>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-video</title>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.394-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.121 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841v0 0zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268v0 0zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+                <path d="M8 16h10v10h-10v-10z"></path>
+                <path d="M18 20l6-4v10l-6-4z"></path>
+              </svg>
+              <div>
+                <a href="/">Video - Title</a>
+                <p class="lb">Jan 31, 2011|MP4|254 mb</p>
+              </div>
+            </div>
             <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-empty</title>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">Other - Document Title</a>
+                <p class="lb">Jun 12, 2007|MDI|127 kb</p>
+              </div>
+            </div>
             <hr class="hr" />
           </section>
         </aside>
@@ -244,83 +380,113 @@
     <div class="infoTeaser">
       <section class="grayBox">
         <img src="img/03_img.png" alt="Erstes Teaserbild" class="imgBIG" />
-        <h3 class="teaser">
-          teaserrow with default teaser with image and link (new window)
-        </h3>
-        <p class="teaser">
-          <span class="lineBreak"><strong>Set highlight for current Teaser [yes] &gt;
-              element-settings</strong></span>
-        </p>
-        <p class="teaser">
-          <a href="https://www.google.de/" target="_blank">&rarr; open in new window.</a>
-        </p>
+        <div class="textFloat">
+          <h3 id="link5">
+            teaserrow with default teaser with image and link (new window)
+          </h3>
+          <p>
+            <strong>Set highlight for current Teaser [yes] &gt;
+              element-settings</strong>
+          </p>
+          <p>
+            <a href="https://www.google.de/" target="_blank"><span class="arrow2">&#10132;</span> open in new
+              window.</a>
+          </p>
+        </div>
       </section>
-      <section class="teaser">
-        <h4>2 teaser</h4>
-        <img src="img/04_img.png" alt="Zweites Teaserbild" class="imgBIG" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-        <h4>Test Video</h4>
-        <video class="video" src="img/demoVid.mp4" controls></video>
-        <hr class="hrSpecial" />
+      <section class="teaser teaserBox">
+        <div>
+          <h4>2 teaser</h4>
+          <img src="img/04_img.png" alt="Zweites Teaserbild" class="imgBIG" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div>
+          <h4>Test Video</h4>
+          <video class="video" src="img/demoVid.mp4" controls></video>
+        </div>
       </section>
+      <hr class="hrSpecial" />
       <section class="teaser">
         <h3>Teaserrow with 3 Teasers: First teaser is a video Teaser</h3>
-        <h4>testvid</h4>
-        <video class="video" src="img/demoVid.mp4" controls></video>
-        <p>this is a test video</p>
-        <h4>default teaser with text</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-        <h4>Document list</h4>
-        <hr class="hr" />
-        <hr class="hr" />
+        <div class="teaserGrid">
+          <div class="teaserGrid1">
+            <h4>testvid</h4>
+            <video class="video" src="img/demoVid.mp4" controls></video>
+            <p class="teaserGrid21">this is a test video</p>
+          </div>
+          <p class="teaserGrid22">this is a test video</p>
+          <div class="teaserGrid3">
+            <h4>default teaser with text</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="teaserGrid4 svgSection">
+            <h4>Document list</h4>
+            <hr class="hr" />
+            <div class="docArea">
+              <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 32 32">
+                <title>file-empty</title>
+                <path
+                  d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z">
+                </path>
+              </svg>
+              <div>
+                <a href="/">PDF - Title</a>
+                <p class="lb">Mar 07, 2017|PDF|88 kb</p>
+              </div>
+            </div>
+            <hr class="hr" />
+          </div>
+        </div>
       </section>
     </div>
   </main>
 
   <!-- Footer Area -->
   <footer class="footer">
-    <p>
-      <span class="lineBreak">&#169; 2018 Ninja Developers</span>
+    <p class="pFooter">
+      &#169; 2018 Ninja Developers
     </p>
     <ul class="linkList">
       <li>
-        <a href="https://www.google.de/">&rarr; target same window</a>
+        <a href="https://www.google.de/"><span class="arrow2">&#10132;</span> target same window &ensp;</a>
       </li>
       <li>
-        <a href="https://www.google.de/" target="_blank">&rarr; target new windows</a>
+        <a href="https://www.google.de/" target="_blank"><span class="arrow2">&#10132;</span> target new windows</a>
       </li>
     </ul>
   </footer>
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
