@@ -474,7 +474,8 @@ th {
   }
 
   .headerImgV2 {
-    display: flex;  }
+    display: flex;
+  }
 
   .stageBox {
     width: 255px;
@@ -504,7 +505,6 @@ th {
   /* Main Content */
   .main {
     margin-top: 290px;
-    
   }
 
   /* Main Area */
@@ -650,10 +650,6 @@ th {
 }
 
 @media screen and (min-width: 1600px) {
-  body {
-    margin: 0 auto;
-  }
-
   /* Main Navigation */
   .searchBox {
     left: 1210px;
