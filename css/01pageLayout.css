@@ -41,8 +41,8 @@ a {
 }
 
 .hr {
-  margin: 0px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .video {
@@ -67,7 +67,9 @@ a {
 
 .search {
   margin: 5px;
+  margin-right: 0px;
   border: 0px;
+  padding-left: 4px;
   color: rgb(74, 82, 89);
   background-color: rgb(244, 242, 243);
 }
@@ -157,11 +159,6 @@ a.searchIcon {
 
 .wrapping h2 {
   margin-top: 0px;
-}
-
-.lineBreakVariable::after {
-  content: "\A";
-  white-space: pre;
 }
 
 .list {
@@ -303,13 +300,17 @@ th {
 }
 
 .svgSection hr {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /* Teaser Area */
+.infoTeaser {
+  margin-top: 50px;
+}
+
 .grayBox {
   background-color: rgb(244, 242, 243);
-  margin-top: 50px;
   padding: 30px 15px 15px 15px;
 }
 
@@ -369,12 +370,6 @@ th {
     margin-top: 30px;
   }
 
-  /* Main Area */
-  /* Main Content */
-  .lineBreakVariable::after {
-    display: none;
-  }
-
   .imgFloat {
     width: 50%;
     float: left;
@@ -422,13 +417,18 @@ th {
   /* Teaser Area */
   .grayBox {
     padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
   }
 
   .grayBox img {
-    width: 50%;
-    float: left;
-    padding-right: 25px;
+    width: 100%;
     padding-top: 25px;
+  }
+
+  .textFloat h3 {
+    margin-top: 16px;
   }
 
   .teaserBox {
@@ -465,8 +465,7 @@ th {
 
   /* Header Area*/
   .stage {
-    position: absolute;
-    height: 240px;
+    position: relative;
   }
 
   .headerImgV1 {
@@ -474,37 +473,29 @@ th {
   }
 
   .headerImgV2 {
-    display: flex;
+    display: block;
   }
 
   .stageBox {
-    width: 255px;
-    height: 115px;
+    width: 240px;
+    height: 130px;
     padding-left: 35px;
-    padding-top: 0px;
-    position: relative;
+    position: absolute;
     background: rgb(1, 157, 211, 0.75);
-    left: 57%;
-    bottom: 190px;
+    left: 56%;
+    bottom: 12.5%;
   }
 
   .stageBox p {
-    margin-bottom: 6px;
+    margin-bottom: 3%;
   }
 
   .headline {
     font-size: 25px;
-    padding-top: 10px;
   }
 
   .arrow {
     padding-left: 60px;
-  }
-
-  /* MainArea */
-  /* Main Content */
-  .main {
-    margin-top: 290px;
   }
 
   /* Main Area */
@@ -544,7 +535,7 @@ th {
 
   /* Teaser Area */
   .grayBox {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 }
 
@@ -558,28 +549,15 @@ th {
   /* Header Area*/
   .stageBox {
     width: 320px;
-    height: 180px;
+    height: 170px;
     padding-left: 55px;
     left: 56.5%;
-    bottom: 270px;
+    bottom: 13%;
   }
 
   .headline {
     font-size: 37px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
-  /* Main Content */
-  /* Breadcrumb Navigation */
-  .navLine {
-    padding-top: 20px;
-  }
-
-  /* Main Area */
-  /* Main Content */
-  .main {
-    margin-top: 350px;
+    margin-bottom: 8%;
   }
 
   .wrapping {
@@ -594,6 +572,12 @@ th {
 
   .imgFloat {
     padding: 7px 25px 10px 0px;
+  }
+
+  /* Main Area */
+  /* Main Content */
+  .videoSection h3 {
+    clear: both;
   }
 
   /* Main Area */
@@ -621,9 +605,6 @@ th {
   }
 
   /* Teaser Area */
-  .grayBox {
-    padding-bottom: 210px;
-  }
   .teaserGrid {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -652,11 +633,11 @@ th {
 @media screen and (min-width: 1600px) {
   /* Main Navigation */
   .searchBox {
-    left: 1210px;
+    left: 76%;
   }
 
   .mainLinks {
-    margin: 20px 190px 20px 190px;
+    margin: 20px 12% 20px 12%;
   }
 
   /* Header Area */
@@ -671,18 +652,16 @@ th {
     width: 400px;
     height: 220px;
     padding-left: 75px;
-    left: 880px;
-    bottom: 330px;
+    left: 55%;
+    bottom: 60px;
   }
 
   .headline {
-    font-size: 40px;
-    padding-top: 25px;
-    margin-bottom: 40px;
+    font-size: 47px;
   }
 
   .stageBox p {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
 
   .noTarget {
@@ -697,17 +676,11 @@ th {
   /* Main Area */
   /* Breadcrumb Navigation */
   .navLine {
-    margin: 0px 190px 10px 190px;
-  }
-
-  /* Main Area */
-  /* Main Content */
-  .main {
-    margin-top: 430px;
+    margin: 40px 12% 10px 12%;
   }
 
   .wrapping {
-    margin: 0px 190px 10px 190px;
+    margin: 0px 12% 10px 12%;
   }
 
   .imgFloat {
@@ -716,21 +689,21 @@ th {
 
   /* Teaser Area */
   .grayBox {
-    padding: 20px 190px 300px 190px;
+    padding: 20px 12% 40px 12%;
   }
 
   .teaser {
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: 12%;
+    margin-right: 12%;
   }
   .hrSpecial {
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: 12%;
+    margin-right: 12%;
   }
 
   /* Footer Area */
   .footer {
-    padding-left: 190px;
-    padding-right: 190px;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
