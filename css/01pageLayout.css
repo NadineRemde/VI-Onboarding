@@ -57,7 +57,7 @@ a {
 .searchBox {
   background-color: rgb(244, 242, 243);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 1fr;
   border-radius: 40px;
   width: 215px;
   margin-top: 5px;
@@ -82,7 +82,7 @@ a {
   font-family: "FontAwesome";
 }
 
-a.searchIcon {
+.fa-search {
   color: rgb(1, 157, 211);
   font-weight: bold;
   font-size: 120%;
@@ -442,18 +442,30 @@ th {
   }
 
   .teaserGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 25px;
-    grid-row-gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .teaserGrid21 {
-    display: none;
+  .teaserGrid1 {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
-  .teaserGrid22 {
+  .teaserGrid1 div {
+    width: 50%;
+  }
+
+  .teaserGrid1 p {
     padding-top: 42px;
+    padding-left: 25px;
+  }
+
+  .teaserGrid2 {
+    width: 50%;
+  }
+
+  .teaserGrid3 {
+    padding-left: 25px;
   }
 }
 
@@ -605,17 +617,41 @@ th {
   }
 
   /* Teaser Area */
-  .teaserGrid {
-    grid-template-columns: 1fr 1fr 1fr;
+
+  .teaserGrid1 {
+    width: 32%;
+    height: 300px;
+    display: block;
   }
 
-  .teaserGrid21 {
-    display: flex;
+  .teaserGrid1 div {
+    width: 100%;
   }
 
-  .teaserGrid22 {
-    display: none;
+  .teaserGrid1 p {
+    padding-top: 32px;
+    padding-left: 0px;
   }
+
+  .teaserGrid2 {
+    width: 32%;
+    padding-left: 2%;
+  }
+
+  .teaserGrid2 p {
+    margin-top: 3px;
+  }
+
+  .teaserGrid2 h4 {
+    margin-bottom: 0px;
+  }
+
+  .teaserGrid3 {
+    width: 32%;
+    padding-left: 2%;
+  }
+  
+
   /* Footer Area */
   .footer {
     display: flex;
